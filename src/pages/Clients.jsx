@@ -101,34 +101,7 @@ const Clients = () => {
         </motion.div>
       </div>
 
-      {/* ✅ Industries We Transform Section */}
-      <div className="max-w-6xl mx-auto mt-20 text-center">
-        <motion.h3
-          className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          Industries <span className="text-indigo-600">We Transform</span>
-        </motion.h3>
-
-        <p className="text-gray-600 max-w-3xl mx-auto mb-8">
-          We have delivered impact across a diverse spectrum of industries:
-        </p>
-
-        <motion.div
-          className="bg-indigo-50 p-8 rounded-2xl shadow-sm max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          <ul className="text-gray-700 text-lg leading-relaxed space-y-3">
-            <li>IT/ITES & GCCs | Manufacturing & Pharma | Retail & FMCG | Infrastructure & Real Estate</li>
-            <li>BFSI & Insurance | Hospitality & Travel | Research & Development | Academia & EdTech</li>
-            <li>Public Sector & NGOs</li>
-          </ul>
-        </motion.div>
-      </div>
+     
     </section>
   );
 };
