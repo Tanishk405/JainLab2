@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import origamiData from "../lottie/Jain impact lab Animation.json";
+import origamiData from "../lottie/JainImpactLabAnimation.json";
 
 const OrigamiAnimation = () => {
   return (
