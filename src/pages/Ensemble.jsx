@@ -115,8 +115,8 @@ const Ensemble = () => {
         </motion.h3>
 
         <div
-          className="tagembed-widget"
-          style={{ width: "100%", height: "600px", overflow: "auto" }}
+          className="tagembed-widget no-scrollbar"
+          style={{ width: "100%", height: "auto", overflow: "auto" }}
           data-widget-id="307337" // ✅ Replace with your Tagembed Widget ID
           data-website="1"
         ></div>

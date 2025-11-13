@@ -13,12 +13,15 @@ const solutions = [
   {
     Icon: Award,
     title: "Talent & Leadership Transformation",
-    desc: "We build pipelines of future-ready leaders through sustained, experiential journeys.",
+    desc: "We build future-ready leaders through experiential and sustained development journeys Our offerings include:",
     bullets: [
-      "Signature Experiential Programs: Outbound Leadership (OBL), Adventure-Based Learning, and Business Simulations.",
-      "Sustained Development Journeys: First-Line Leader Ascend, Manager Excellence Ignite, and Leadership Evolution programs.",
-      "High-Potential Acceleration: Custom tracks using Assessment & Development Centres (ADCs) and executive coaching.",
-      "Behavioral & Soft Skills Mastery: Interventions powered by Belbin, MBTI, DISC, and NLP.",
+"Experiential Programs: OBL, Adventure-Based Learning & Business Simulations",
+
+"Development Tracks: First-Line Leader Ascend, Manager Excellence Ignite & Leadership Evolution",
+
+"High-Potential Acceleration: ADCs & executive coaching",
+
+"Behavioural Mastery: Belbin, MBTI, DISC & NLP-based interventions",
     ],
   },
   {

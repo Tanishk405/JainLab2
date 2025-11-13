@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import peopleAnimation from "../lottie/Connection people.json";
+import peopleAnimation from "../lottie/PeopleCentric.json";
 
 const PeopleCentricSolutions = () => {
   return (

@@ -27,7 +27,7 @@ const Hero = () => {
         className="absolute bottom-0 right-0 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 mt-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Origami Animation */}
         <motion.div
           initial={{ opacity: 0, y: 30, scale: 0.9 }}

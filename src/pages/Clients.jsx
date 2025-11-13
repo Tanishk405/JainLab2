@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// ✅ Importing client logos
+// Logos
 import abInbev from "../assets/clients/ab-inbev.png";
 import kontoor from "../assets/clients/kontoor.png";
 import sterling from "../assets/clients/sterling.png";
@@ -32,14 +32,14 @@ const clients = [
 
 const Clients = () => {
   return (
-    <section className="py-20 px-6 bg-white overflow-hidden relative">
+    <section className="py-20 px-6 bg-gradient-to-br from-white to-indigo-50 relative overflow-hidden">
+
       {/* Header */}
       <div className="max-w-6xl mx-auto text-center mb-10">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-gray-900"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
         >
           Our <span className="text-indigo-600">Clientele & Impact Stories</span>
         </motion.h2>
@@ -48,8 +48,9 @@ const Clients = () => {
         </p>
       </div>
 
-      {/* ✅ Auto-scrolling Client Logos */}
+      {/* Auto-scroll logos */}
       <div className="relative overflow-hidden max-w-6xl mx-auto group h-[300px] sm:h-[360px] md:h-[420px] lg:h-[480px]">
+
         <motion.div
           className="absolute w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6"
           animate={{ y: ["0%", "-100%"] }}
@@ -63,25 +64,25 @@ const Clients = () => {
           {[...clients, ...clients].map((client, i) => (
             <motion.div
               key={i}
-              className="flex items-center justify-center bg-gray-50 rounded-xl p-5 hover:shadow-lg transition-transform duration-300"
-              whileHover={{ scale: 1.1 }}
+              className="flex items-center justify-center rounded-xl p-4 backdrop-blur-xl bg-white/10 border border-white/20 shadow-sm hover:shadow-md transition-all duration-300"
+              whileHover={{ scale: 1.08 }}
             >
               <img
                 src={client.src}
                 alt={client.name}
-                className="max-h-12 sm:max-h-14 md:max-h-16 object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="max-h-12 sm:max-h-14 md:max-h-16 object-contain contrast-125 saturate-110"
               />
             </motion.div>
           ))}
         </motion.div>
+
       </div>
 
-      {/* ✅ Featured Impact */}
+      {/* Featured Impact */}
       <div className="max-w-5xl mx-auto mt-16 text-left">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
           className="bg-indigo-50 p-6 rounded-2xl shadow-sm"
         >
           <h3 className="font-semibold text-gray-800 text-lg">
@@ -101,7 +102,6 @@ const Clients = () => {
         </motion.div>
       </div>
 
-     
     </section>
   );
 };

@@ -11,3 +11,18 @@ body {
 .tb_review_hub_wrap{
   display: none !important;
 }
+
+
+/* Hide scrollbar everywhere */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important; /* IE + Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+/* Tagembed container fix */
+.tagembed-widget {
+  overflow: hidden !important; /* 🟢 Prevents scrollbar flash */
+}

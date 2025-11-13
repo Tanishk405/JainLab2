@@ -66,10 +66,8 @@ const Philosophy = () => {
               Purpose is the Design
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Every origami masterpiece begins with a clear vision and design.
-              We help you define and crystallize your organizational purpose —
-              your core vision and strategic direction. This blueprint guides
-              every fold, ensuring all efforts align toward a single, elegant outcome.
+             Every origami starts with a clear vision.
+            We help you define and sharpen your organizational purpose — the blueprint that guides every fold.
             </p>
           </motion.div>
 
@@ -83,10 +81,8 @@ const Philosophy = () => {
               People are the Paper
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              The paper itself—its quality and grain—represents your people.
-              We respect the uniqueness of every individual and unfold their
-              capabilities carefully, guiding them to become part of a stronger,
-              more integrated whole.
+                Your people are the paper.
+We help unfold their strengths and shape them into a unified, stronger whole.
             </p>
           </motion.div>
 
@@ -100,10 +96,7 @@ const Philosophy = () => {
               Process is the Fold
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              The science of origami lies in the precision of its folds.
-              Our processes—strategic HR systems, experiential learning
-              journeys, and data-driven frameworks—add strength and functionality,
-              building complexity and capability layer by layer.
+                Origami gains strength through precise folds — just as our HR systems and data-driven processes build capabilities step by step.
             </p>
           </motion.div>
         </div>

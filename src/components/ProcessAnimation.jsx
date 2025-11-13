@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import processAnim from "../lottie/Processing (1).json"; // ✅ your new animation file
+import processAnim from "../lottie/Process.json"; // ✅ your new animation file
 
 const ProcessAnimation = () => {
   return (
