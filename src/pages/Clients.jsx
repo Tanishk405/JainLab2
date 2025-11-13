@@ -32,7 +32,7 @@ const clients = [
 
 const Clients = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-white to-indigo-50 relative overflow-hidden">
+    <section className="py-20 px-6 bg-gradient-to-br from-white to-indigo-50 relative overflow-hidden mt-8">
 
       {/* Header */}
       <div className="max-w-6xl mx-auto text-center mb-10">

@@ -42,7 +42,7 @@ const Ensemble = () => {
   }, []);
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-white to-indigo-50 overflow-hidden">
+    <section className="py-20 px-6 bg-gradient-to-br from-white to-indigo-50 overflow-hidden mt-8">
       {/* Header */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <motion.h2

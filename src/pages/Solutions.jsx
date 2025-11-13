@@ -72,7 +72,7 @@ const solutions = [
 
 const Solutions = () => {
   return (
-    <section className="bg-gradient-to-br from-white to-indigo-50 py-20 px-6">
+    <section className="bg-gradient-to-br from-white to-indigo-50 py-20 px-6 mt-8">
       {/* Section Header */}
       <div className="max-w-6xl mx-auto text-center mb-12">
         <motion.h2
