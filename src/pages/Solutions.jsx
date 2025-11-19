@@ -1,32 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SolutionsAnimation from "../components/SolutionAnimation";
-import {
-  Award,
-  Layers,
-  Briefcase,
-  Settings,
-  Cpu,
-} from "lucide-react";
+import { Award, Layers, Briefcase, Settings, Cpu } from "lucide-react";
+import Image10 from "../assets/TeamImg/Image10.jpeg"
+import Image11 from "../assets/TeamImg/Image11.jpg"
+import Image12 from "../assets/TeamImg/Image12.jpg"
+import Image13 from "../assets/TeamImg/Image15.jpg"
+import Image14 from "../assets/TeamImg/Image16.jpg"
 
 const solutions = [
   {
     Icon: Award,
     title: "Talent & Leadership Transformation",
+    img: Image10,
     desc: "We build future-ready leaders through experiential and sustained development journeys Our offerings include:",
     bullets: [
-"Experiential Programs: OBL, Adventure-Based Learning & Business Simulations",
-
-"Development Tracks: First-Line Leader Ascend, Manager Excellence Ignite & Leadership Evolution",
-
-"High-Potential Acceleration: ADCs & executive coaching",
-
-"Behavioural Mastery: Belbin, MBTI, DISC & NLP-based interventions",
+      "Experiential Programs: OBL, Adventure-Based Learning & Business Simulations",
+      "Development Tracks: First-Line Leader Ascend, Manager Excellence Ignite & Leadership Evolution",
+      "High-Potential Acceleration: ADCs & executive coaching",
+      "Behavioural Mastery: Belbin, MBTI, DISC & NLP-based interventions",
     ],
   },
   {
     Icon: Layers,
     title: "Organizational Design & Development",
+    img: Image11,
     desc: "We architect the blueprints for high-performing, agile organizations.",
     bullets: [
       "Organization Structuring & Role Clarity.",
@@ -38,6 +36,7 @@ const solutions = [
   {
     Icon: Briefcase,
     title: "Strategic HR Consulting",
+    img: Image12,
     desc: "We build the strategic HR function from the ground up.",
     bullets: [
       "HR Function Setup & Maturity Modeling.",
@@ -49,6 +48,7 @@ const solutions = [
   {
     Icon: Settings,
     title: "HR Operations & Digital Transformation",
+    img: Image13,
     desc: "We create efficient, scalable, and employee-centric HR engines.",
     bullets: [
       "HR Policy Suite Formulation.",
@@ -60,7 +60,7 @@ const solutions = [
   {
     Icon: Cpu,
     title: "People Analytics & AI",
-    desc: "We bring the future of HR into your present.",
+    img: Image14,
     bullets: [
       "Predictive Talent Analytics.",
       "Skills Ontology & Future-Readiness.",
@@ -73,8 +73,9 @@ const solutions = [
 const Solutions = () => {
   return (
     <section className="bg-gradient-to-br from-white to-indigo-50 py-20 px-6 mt-8">
-      {/* Section Header */}
-      <div className="max-w-6xl mx-auto text-center mb-12">
+
+      {/* Header */}
+      <div className="max-w-6xl mx-auto text-center mb-16">
         <motion.h2
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,10 +84,11 @@ const Solutions = () => {
           Our <span className="text-indigo-600">Solutions</span>: The Master Fold Portfolio
         </motion.h2>
 
-           <motion.div
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
+          transition={{ duration: 0.8 }}
+          className="w-full flex justify-center mt-6"
         >
           <SolutionsAnimation />
         </motion.div>
@@ -96,32 +98,54 @@ const Solutions = () => {
         </p>
       </div>
 
-      {/* Solutions Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Alternating Left + Right Layout */}
+      <div className="max-w-6xl mx-auto space-y-24">
+
         {solutions.map((s, i) => (
           <motion.div
-            key={s.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.12 * i, duration: 0.6 }}
-            className="p-8 rounded-2xl bg-white border border-indigo-100 shadow-sm hover:shadow-md transition-all duration-300"
+            key={i}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "-50px" }}
+            transition={{ duration: 0.45 }}
+            className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center`}
           >
-            <div className="flex items-start gap-4">
-              <s.Icon className="w-10 h-10 text-indigo-600 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-1 text-gray-900">
-                  {s.title}
-                </h3>
-                <p className="text-gray-600 mb-3 text-sm">{s.desc}</p>
-                <ul className="text-gray-700 list-disc list-inside space-y-1 text-sm leading-relaxed">
-                  {s.bullets.map((b, idx) => (
-                    <li key={idx}>{b}</li>
-                  ))}
-                </ul>
-              </div>
+
+            {/* IMAGE */}
+            <div
+              className={`w-full rounded-2xl overflow-hidden shadow-sm
+              ${i % 2 === 1 ? "md:order-2" : "md:order-1"}
+            `}
+            >
+              <motion.img
+                loading="lazy"
+                src={`${s.img}?q=60&w=1200`}
+                alt={s.title}
+                className="w-full h-72 md:h-80 object-cover rounded-xl"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              />
             </div>
+
+            {/* TEXT */}
+            <div className={`${i % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
+              <div className="flex items-start gap-4 mb-3">
+                <s.Icon className="w-10 h-10 text-indigo-600 mt-1" />
+                <h3 className="text-2xl font-semibold text-gray-900">{s.title}</h3>
+              </div>
+
+              <p className="text-gray-600 mb-4">{s.desc}</p>
+
+              <ul className="text-gray-700 list-disc ml-5 space-y-2 text-[15px]">
+                {s.bullets.map((b, idx) => (
+                  <li key={idx}>{b}</li>
+                ))}
+              </ul>
+            </div>
+
           </motion.div>
         ))}
+
       </div>
     </section>
   );

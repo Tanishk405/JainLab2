@@ -17,6 +17,7 @@ const Nav = () => {
 
   const navLinks = [
     { name: "Home", to: "/" },
+    { name: "About Us", to: "/about" }, // <-- Added here}
     { name: "Our Philosophy", to: "/philosophy" },
     { name: "Solutions", to: "/solutions" },
     { name: "Consulting Ensemble", to: "/ensemble" },
@@ -88,7 +89,7 @@ const Nav = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile & Tablet Menu */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -15 }}

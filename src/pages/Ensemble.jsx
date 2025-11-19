@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import AmanJain from "../assets/team/aman.png";
+import Linkedin from "../components/LinkeDin"; 
 
 
 const team = [
@@ -111,7 +112,7 @@ const Ensemble = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          Our Latest <span className="text-indigo-600">LinkedIn Updates</span>
+        <span className="text-indigo-600"><Linkedin/> </span>
         </motion.h3>
 
         <div

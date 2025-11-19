@@ -8,6 +8,7 @@ import Solutions from "./pages/Solutions";
 import Ensemble from "./pages/Ensemble";
 import Clients from "./pages/Clients";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
         <Route path="/philosophy" element={<Philosophy />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/ensemble" element={<Ensemble />} />
