@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import dataAnim from "../lottie/LinkeDinLogo.json"; // ✅ your uploaded animation
+import dataAnim from "../lottie/LinkedinLogo.json"; // ✅ your uploaded animation
 
 const LinkedinAnimation = () => {
   return (
